@@ -17,7 +17,7 @@
     --incoming-chat-border: #444654;
 }
 
-.light-mode{
+.lightmode{
     --text-color: #343541;
     --icon-color: #a9a9bc;
     --icon-hover-bg: #f1f1f3;
@@ -89,6 +89,10 @@ body {
     white-space: pre-wrap;
     font-size: 1.07rem;
     padding: 0 50px 0 25px;
+}
+
+.chat .chat-details p.error {
+    color: red;
 }
 
 span.material-symbols-rounded {
@@ -169,7 +173,8 @@ span.material-symbols-rounded {
     border-radius: 5px;
     font-size: 1.0rem;
     padding: 10px 40px 10px 15px;
-
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 .typing-content span {
@@ -226,6 +231,21 @@ span.material-symbols-rounded {
 
 :where(.chat-container, textarea)::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
+}
+
+/* begin text styling*/
+
+.begin-text {
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.begin-text p {
+    margin-top: 5px;
 }
 
 
